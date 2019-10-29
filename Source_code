@@ -1,0 +1,20 @@
+n = int(input())
+l = []
+l1 = list(map(int,input().split()))
+zero = 0
+one = 0
+for i in range(n):
+        l.append(l1[i] % 2)
+for i in range(n):
+    if(l[i] == 0):
+        zero = zero + 1
+    else:
+        one = one + 1
+if(zero == 1):
+    for i in range(n):
+        if(l[i] == 0):
+            print(i + 1)
+else:
+    for i in range(n):
+        if(l[i] == 1):
+            print(i + 1)
